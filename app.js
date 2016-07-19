@@ -15,23 +15,31 @@ if (answerOne.toLowerCase() === 'yes' || answerOne.toLowerCase() === 'y') {
 var answerTwo = prompt('Does Bronwyn have a daughter?');
 
 if (answerTwo.toLowerCase() === 'yes' || answerTwo.toLowerCase() === 'y') {
-    console.log('You are correct! She does have a daughter.');
+    alert('You are correct! She does have a daughter.');
 } else {
-    console.log('You haven\'t been paying attention! She does have a daughter.');
+    alert('You haven\'t been paying attention! She does have a daughter.');
 };
 
 var answerThree = prompt('Is Bronwyn a huge fan of Firefly/Serenity?');
 
 if (answerThree.toLowerCase() === 'yes' || answerThree.toLowerCase() === 'y') {
-    console.log('So you noticed the t-shirts! Yes, she is a Browncoat!');
+    document.write('So you noticed the t-shirts! Yes, she is a Browncoat!');
 } else {
-    console.log('Sorry, you got that one wrong. She\'s a huge fan of Firefly and Serenity');
+    document.write('Sorry, you got that one wrong. She\'s a huge fan of Firefly and Serenity.');
 };
 
-var answerFour = prompt('');
+var answerFour = prompt('Does Bronwyn own the best coffeehouse in Seattle?');
 
 if (answerFour.toLowerCase() === 'yes' || answerFour.toLowerCase() === 'y') {
-    console.log('');
+    console.log('Ah! So you\'ve been there! Glad you liked it!');
 } else {
-    console.log('');
+    console.log('Clearly you haven\'t had a chance to visit yet.');
+};
+
+var answerFive = prompt('Is Bronwyn learning to code?');
+
+if (answerFive.toLowerCase() === 'yes' || answerFive.toLowerCase() === 'y') {
+    alert('Why yes she is! That\'s why she\'s at CodeFellows!');
+} else {
+    alert('Got that wrong, mate. She\'s at CodeFellows to learn to code and launch a new career!')
 };
