@@ -1,4 +1,7 @@
 h1 {
-  color: red;
+    color: green;
+}
 
+p {
+    font-family: Arial, sans-serif;
 }
