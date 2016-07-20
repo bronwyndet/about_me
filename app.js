@@ -6,10 +6,12 @@ console.log('Greetings, ' + userName + '! It \'s nice to meet you. Let\'s answer
 
 var answerOne = prompt('Does Bronwyn ride a motorcycle?');
 
+var testOne = document.getElementById('testOne');
+
 if (answerOne.toLowerCase() === 'yes' || answerOne.toLowerCase() === 'y') {
-    document.write('That\'s right! Bronwyn does ride a motorcycle!')
+    testOne.textContent = 'That\'s right! Bronwyn does ride a motorcycle!';
 } else {
-    document.write('You must not have noticed the boots she\'s wearing today! She does ride a motorcycle!');
+    testOne.textContent = 'You must not have noticed the boots she\'s wearing today! She does ride a motorcycle!';
 };
 
 var answerTwo = prompt('Does Bronwyn have a daughter?');

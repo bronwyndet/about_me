@@ -1,17 +1,39 @@
 body {
     font-family: Arial, sans-serif;
     background-image: url("images/atmospheremoto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: grey;
+    background-position: center;
+    color: yellow;
+    padding: 10px;
 }
 
 h1 {
     color:  #003300;
     text-align: center;
+    font-size: 2.5em;
 }
 
 h2 {
-    color:  #4CA64C;
+    color: black;
 }
 
 p {
     font-family: Times, serif;
+}
+
+li {
+    font-family: Times, serif;
+}
+
+.content {
+    background: rgba(76, 175, 80, 0.5);
+    padding: 15px;
+    border-radius: 5%;
+
+}
+
+.photos {
+    display: inline;
 }
