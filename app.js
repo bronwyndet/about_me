@@ -46,22 +46,31 @@ var userName = prompt('What is your name?');
 //   alert('Got that wrong, mate. She\'s at CodeFellows to learn to code and launch a new career!')
 // };
 
+//begin Question 6: guessing a number, in this case a year
 var businessYear = 2005;
+var i = 0;
 
-for (var i = 0; i < 4; i++) {
+while (i < 4) {
   var answerSix = prompt('In what year was Wayward Coffeehouse established? Please answer with a 4-digit year.')
   if (isNaN(answerSix)) {
     alert('Sorry ' + userName + ', your answer is not a number. Please try again.');
-  } else if (answerSix.length !== 4) {
+    i++;
+  } else if (parseInt(answerSix.length) !== 4) {
     alert('Sorry ' + userName + ', your answer is not a 4-digit year. Please try again.');
+    i++;
   } else if (answerSix > businessYear && answerSix <= 2016) {
     alert('Wayward Coffeehouse has been around longer than that. Try again!');
+    i++;
   } else if (answerSix > 2016) {
     alert('That\'s in the future! There\'s been no break in the space time continuum. Please try again.');
+    i++;
   } else if (answerSix < businessYear) {
     alert('Wayward Coffeeouse is not quite that old yet. Try again!');
-  } else if (answerSix === businessYear) {
+    i++;
+  } else if (parseInt(answerSix) === parseInt(businessYear)) {
     alert('You got that right! Wayward Coffeeouse opened in 2005.');
-    i = 4;
+    i = 5;
   }
 }
+
+//Question 7, answer should be a string, use an array, six attempts
