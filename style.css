@@ -27,13 +27,23 @@ li {
     font-family: Times, serif;
 }
 
+nav {
+  padding: 15px;
+}
+
 .content {
     background: rgba(76, 175, 80, 0.5);
-    padding: 15px;
-    border-radius: 5%;
-
+    padding: 10px 25px 10px 25px;
+    margin: -20px;
+    /*border-radius: 5%;*/
 }
 
 .photos {
+    display: inline;
+}
+
+.nav {
+    font-family: Arial, sans-serif;
+    font-size: 1.5em;
     display: inline;
 }
