@@ -62,15 +62,19 @@ function questionFour() {
 }
 questionFour();
 
-var answerFive = prompt('Is Bronwyn learning to code?');
-var responseFive = document.getElementById('responseFive');
+// questionFive is wrapped and Ready....
+function questionFive() {
+  var answerFive = prompt('Is Bronwyn learning to code?');
+  var responseFive = document.getElementById('responseFive');
 
-if (answerFive.toLowerCase() === 'yes' || answerFive.toLowerCase() === 'y') {
-  responseFive.textContent = 'Why yes she is! That\'s why she\'s at CodeFellows!';
-  score++;
-} else {
-  responseFive.textContent = 'Got that wrong, mate. She\'s at CodeFellows to learn to code and launch a new career!';
-};
+  if (answerFive.toLowerCase() === 'yes' || answerFive.toLowerCase() === 'y') {
+    responseFive.textContent = 'Why yes she is! That\'s why she\'s at CodeFellows!';
+    score++;
+  } else {
+    responseFive.textContent = 'Got that wrong, mate. She\'s at CodeFellows to learn to code and launch a new career!';
+  };
+}
+questionFive();
 
 //Begin Question 6: guessing a number, in this case a year
 var businessYear = 2005;
