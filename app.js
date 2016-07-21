@@ -77,7 +77,7 @@ function questionFive() {
 questionFive();
 
 //Begin Question 6: guessing a number, in this case a year
-//  questionSix is wrapped and Ready 
+//  questionSix is wrapped and Ready
 function questionSix() {
   var businessYear = 2005;
   var guessYear = 0;
@@ -109,28 +109,32 @@ function questionSix() {
 questionSix();
 
 // Begin Question 7: answer should be a string, use an array, six attempts
-var countriesLived = ['australia', 'ireland', 'scotland', 'thailand'];
-var guessCountry = 0;
+// questionSeven is wrapped and Ready
+function questionSeven() {
+  var countriesLived = ['australia', 'ireland', 'scotland', 'thailand'];
+  var guessCountry = 0;
 
-while (guessCountry < 6) {
-  var answerSeven = prompt('Name a country (other than the U.S.) where you think Bronwyn has lived.').toLowerCase();
-  var foundAnswer = false;
-  for (var i = 0; i < countriesLived.length; i++) {
-//    console.log(answerSeven, countriesLived[0]);
-    if (answerSeven === countriesLived[i]) {
-      foundAnswer = true;
+  while (guessCountry < 6) {
+    var answerSeven = prompt('Name a country (other than the U.S.) where you think Bronwyn has lived.').toLowerCase();
+    var foundAnswer = false;
+    for (var i = 0; i < countriesLived.length; i++) {
+  //    console.log(answerSeven, countriesLived[0]);
+      if (answerSeven === countriesLived[i]) {
+        foundAnswer = true;
+      }
     }
-  }
-  if (foundAnswer === true) {
-    alert('Correct');
-    score++;
-    guessCountry = 6;
-  } else {
-    alert('Try again.');
-    guessCountry++;
-  }
-};
+    if (foundAnswer === true) {
+      alert('Correct');
+      score++;
+      guessCountry = 6;
+    } else {
+      alert('Try again.');
+      guessCountry++;
+    }
+  };
 
-if (score <= 7) {
-  alert('Thanks for playing ' + userName + ', you got ' + score + ' out of 7!');
-};
+  if (score <= 7) {
+    alert('Thanks for playing ' + userName + ', you got ' + score + ' out of 7!');
+  };
+}
+questionSeven();
