@@ -48,15 +48,19 @@ function questionThree() {
 }
 questionThree();
 
-var answerFour = prompt('Does Bronwyn own the best coffeehouse in Seattle?');
-var responseFour = document.getElementById('responseFour');
+// questionFour is wrapped and Ready
+function questionFour() {
+  var answerFour = prompt('Does Bronwyn own the best coffeehouse in Seattle?');
+  var responseFour = document.getElementById('responseFour');
 
-if (answerFour.toLowerCase() === 'yes' || answerFour.toLowerCase() === 'y') {
-  responseFour.textContent = 'Ah! So you\'ve been there! Glad you liked it!';
-  score++;
-} else {
-  responseFour.textContent = 'Clearly you haven\'t had a chance to visit yet.';
-};
+  if (answerFour.toLowerCase() === 'yes' || answerFour.toLowerCase() === 'y') {
+    responseFour.textContent = 'Ah! So you\'ve been there! Glad you liked it!';
+    score++;
+  } else {
+    responseFour.textContent = 'Clearly you haven\'t had a chance to visit yet.';
+  };
+}
+questionFour();
 
 var answerFive = prompt('Is Bronwyn learning to code?');
 var responseFive = document.getElementById('responseFive');
