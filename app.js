@@ -4,27 +4,35 @@ var score = 0;
 
 //Begin first 5 questions of the guessing game
 var userName = prompt('What is your name?');
-  alert('Greetings, ' + userName + '! It\'s nice to meet you. Let\'s answer some questions about Bronwyn! Please answer with yes or no, or y or n.');
+alert('Greetings, ' + userName + '! It\'s nice to meet you. Let\'s answer some questions about Bronwyn! Please answer with yes or no, or y or n.');
 
-var answerOne = prompt('Does Bronwyn ride a motorcycle?');
-var responseOne = document.getElementById('responseOne');
+//questionOne function is wrapped
+function questionOne() {
+  var answerOne = prompt('Does Bronwyn ride a motorcycle?');
+  var responseOne = document.getElementById('responseOne');
 
-if (answerOne.toLowerCase() === 'yes' || answerOne.toLowerCase() === 'y') {
-  responseOne.textContent = 'That\'s right! Bronwyn does ride a motorcycle!';
-  score++;
-} else {
-  responseOne.textContent = 'You must not have noticed the boots she\'s wearing today! She does ride a motorcycle!';
-};
+  if (answerOne.toLowerCase() === 'yes' || answerOne.toLowerCase() === 'y') {
+    responseOne.textContent = 'That\'s right! Bronwyn does ride a motorcycle!';
+    score++;
+  } else {
+    responseOne.textContent = 'You must not have noticed the boots she\'s wearing today! She does ride a motorcycle!';
+  };
+}
+questionOne();
 
-var answerTwo = prompt('Does Bronwyn have a daughter?');
-var responseTwo = document.getElementById('responseTwo');
+// questionTwo function is wrapped
+function questionTwo() {
+  var answerTwo = prompt('Does Bronwyn have a daughter?');
+  var responseTwo = document.getElementById('responseTwo');
 
-if (answerTwo.toLowerCase() === 'yes' || answerTwo.toLowerCase() === 'y') {
-  responseTwo.textContent = 'You are correct! She does have a daughter.';
-  score++;
-} else {
-  responseTwo.textContent = 'You haven\'t been paying attention! She does have a daughter.';
-};
+  if (answerTwo.toLowerCase() === 'yes' || answerTwo.toLowerCase() === 'y') {
+    responseTwo.textContent = 'You are correct! She does have a daughter.';
+    score++;
+  } else {
+    responseTwo.textContent = 'You haven\'t been paying attention! She does have a daughter.';
+  };
+}
+questionTwo();
 
 var answerThree = prompt('Is Bronwyn a huge fan of Firefly/Serenity?');
 var responseThree = document.getElementById('responseThree');
@@ -61,7 +69,7 @@ var businessYear = 2005;
 var guessYear = 0;
 
 while (guessYear < 4) {
-  var answerSix = prompt('In what year was Wayward Coffeehouse established? Please answer with a 4-digit year.')
+  var answerSix = prompt('In what year was Wayward Coffeehouse established? Please answer with a 4-digit year.');
   if (isNaN(answerSix)) {
     alert('Sorry ' + userName + ', your answer is not a number. Please try again.');
     guessYear++;
@@ -102,7 +110,7 @@ while (guessCountry < 6) {
     score++;
     guessCountry = 6;
   } else {
-    alert('Try again.')
+    alert('Try again.');
     guessCountry++;
   }
 };
