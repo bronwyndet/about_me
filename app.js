@@ -34,7 +34,7 @@ function questionTwo() {
 }
 questionTwo();
 
-// questionThree function is wrapped
+// questionThree function is wrapped and ready
 function questionThree() {
   var answerThree = prompt('Is Bronwyn a huge fan of Firefly/Serenity?');
   var responseThree = document.getElementById('responseThree');
