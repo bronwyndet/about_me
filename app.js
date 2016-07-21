@@ -77,32 +77,36 @@ function questionFive() {
 questionFive();
 
 //Begin Question 6: guessing a number, in this case a year
-var businessYear = 2005;
-var guessYear = 0;
+//  questionSix is wrapped and Ready 
+function questionSix() {
+  var businessYear = 2005;
+  var guessYear = 0;
 
-while (guessYear < 4) {
-  var answerSix = prompt('In what year was Wayward Coffeehouse established? Please answer with a 4-digit year.');
-  if (isNaN(answerSix)) {
-    alert('Sorry ' + userName + ', your answer is not a number. Please try again.');
-    guessYear++;
-  } else if (parseInt(answerSix.length) !== 4) {
-    alert('Sorry ' + userName + ', your answer is not a 4-digit year. Please try again.');
-    guessYear++;
-  } else if (answerSix > businessYear && answerSix <= 2016) {
-    alert('Wayward Coffeehouse has been around longer than that. Try again!');
-    guessYear++;
-  } else if (answerSix > 2016) {
-    alert('That\'s in the future! There\'s been no break in the space time continuum. Please try again.');
-    guessYear++;
-  } else if (answerSix < businessYear) {
-    alert('Wayward Coffeeouse is not quite that old yet. Try again!');
-    guessYear++;
-  } else if (parseInt(answerSix) === parseInt(businessYear)) {
-    alert('You got that right! Wayward Coffeeouse opened in 2005.');
-    score++;
-    guessYear = 5;
+  while (guessYear < 4) {
+    var answerSix = prompt('In what year was Wayward Coffeehouse established? Please answer with a 4-digit year.');
+    if (isNaN(answerSix)) {
+      alert('Sorry ' + userName + ', your answer is not a number. Please try again.');
+      guessYear++;
+    } else if (parseInt(answerSix.length) !== 4) {
+      alert('Sorry ' + userName + ', your answer is not a 4-digit year. Please try again.');
+      guessYear++;
+    } else if (answerSix > businessYear && answerSix <= 2016) {
+      alert('Wayward Coffeehouse has been around longer than that. Try again!');
+      guessYear++;
+    } else if (answerSix > 2016) {
+      alert('That\'s in the future! There\'s been no break in the space time continuum. Please try again.');
+      guessYear++;
+    } else if (answerSix < businessYear) {
+      alert('Wayward Coffeeouse is not quite that old yet. Try again!');
+      guessYear++;
+    } else if (parseInt(answerSix) === parseInt(businessYear)) {
+      alert('You got that right! Wayward Coffeeouse opened in 2005.');
+      score++;
+      guessYear = 5;
+    }
   }
 }
+questionSix();
 
 // Begin Question 7: answer should be a string, use an array, six attempts
 var countriesLived = ['australia', 'ireland', 'scotland', 'thailand'];
