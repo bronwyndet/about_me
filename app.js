@@ -46,31 +46,51 @@ var userName = prompt('What is your name?');
 //   alert('Got that wrong, mate. She\'s at CodeFellows to learn to code and launch a new career!')
 // };
 
-//begin Question 6: guessing a number, in this case a year
+//Begin Question 6: guessing a number, in this case a year
 var businessYear = 2005;
-var i = 0;
+var guessYear = 0;
 
-while (i < 4) {
+while (guessYear < 4) {
   var answerSix = prompt('In what year was Wayward Coffeehouse established? Please answer with a 4-digit year.')
   if (isNaN(answerSix)) {
     alert('Sorry ' + userName + ', your answer is not a number. Please try again.');
-    i++;
+    guessYear++;
   } else if (parseInt(answerSix.length) !== 4) {
     alert('Sorry ' + userName + ', your answer is not a 4-digit year. Please try again.');
-    i++;
+    guessYear++;
   } else if (answerSix > businessYear && answerSix <= 2016) {
     alert('Wayward Coffeehouse has been around longer than that. Try again!');
-    i++;
+    guessYear++;
   } else if (answerSix > 2016) {
     alert('That\'s in the future! There\'s been no break in the space time continuum. Please try again.');
-    i++;
+    guessYear++;
   } else if (answerSix < businessYear) {
     alert('Wayward Coffeeouse is not quite that old yet. Try again!');
-    i++;
+    guessYear++;
   } else if (parseInt(answerSix) === parseInt(businessYear)) {
     alert('You got that right! Wayward Coffeeouse opened in 2005.');
-    i = 5;
+    guessYear = 5;
   }
 }
 
-//Question 7, answer should be a string, use an array, six attempts
+// Begin Question 7: answer should be a string, use an array, six attempts
+var countriesLived = ['australia', 'ireland', 'scotland', 'thailand'];
+var guessCountry = 0;
+
+while (guessCountry < 6) {
+  var answerSeven = prompt('Name a country (other than the U.S.) where you think Bronwyn has lived.').toLowerCase();
+  var foundAnswer = false;
+  for (var i = 0; i < countriesLived.length; i++) {
+    console.log(answerSeven, countriesLived[0]);
+    if (answerSeven === countriesLived[i]) {
+      foundAnswer = true;
+    }
+  }
+  if (foundAnswer === true) {
+    alert("Correct");
+    guessCountry = 6;
+  } else {
+    alert("Try again.")
+    guessCountry++;
+  }
+};
