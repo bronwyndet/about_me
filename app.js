@@ -34,15 +34,19 @@ function questionTwo() {
 }
 questionTwo();
 
-var answerThree = prompt('Is Bronwyn a huge fan of Firefly/Serenity?');
-var responseThree = document.getElementById('responseThree');
+// questionThree function is wrapped
+function questionThree() {
+  var answerThree = prompt('Is Bronwyn a huge fan of Firefly/Serenity?');
+  var responseThree = document.getElementById('responseThree');
 
-if (answerThree.toLowerCase() === 'yes' || answerThree.toLowerCase() === 'y') {
-  responseThree.textContent = 'So you noticed the t-shirts! Yes, she is a Browncoat!';
-  score++;
-} else {
-  responseThree.textContent = 'Sorry, you got that one wrong. She\'s a huge fan of Firefly and Serenity.';
-};
+  if (answerThree.toLowerCase() === 'yes' || answerThree.toLowerCase() === 'y') {
+    responseThree.textContent = 'So you noticed the t-shirts! Yes, she is a Browncoat!';
+    score++;
+  } else {
+    responseThree.textContent = 'Sorry, you got that one wrong. She\'s a huge fan of Firefly and Serenity.';
+  };
+}
+questionThree();
 
 var answerFour = prompt('Does Bronwyn own the best coffeehouse in Seattle?');
 var responseFour = document.getElementById('responseFour');
