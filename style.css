@@ -39,6 +39,11 @@ h2 {
     margin-top: 60px;
 }
 
+h3 {
+    color: black;
+    margin-left: 15px;
+}
+
 h4  {
     color: white;
     text-align: right;
@@ -75,7 +80,6 @@ a {
   text-decoration: none;
   color: white;
   margin-left: 15px;
-  font-size: .75em;
 }
 
 a:hover {
@@ -89,7 +93,7 @@ a:hover {
 #sidebar {
   float: right;
   width: 200px;
-  height: 975px;
+  height: 600px;
   padding: 15px;
   margin-left: 25px;
   background-color: #0C2E09;
@@ -97,7 +101,14 @@ a:hover {
   padding-top: 40px;
 }
 
-.sbtxt {
+li#sbli {
+  font-size: .75em;
+  font-family: sans-serif;
+  list-style: none;
+  line-height: 2em;
+}
+
+#sbtxt {
   font-family: sans-serif;
   color: lightgreen;
   font-size: 1.25em;
@@ -153,8 +164,8 @@ a:hover {
     background-color: lightgrey;
 }
 
-.navbutton:visited {
-    background-color: lightgreen;
+#currentpg {
+    background-color: #55BE55;
 }
 
 .nav {
@@ -163,8 +174,17 @@ a:hover {
     display: inline;
 }
 
-.leading {
+.gameintro {
     color: yellow;
-    margin-left: 10px;
+    margin-left: 15px;
     margin-top: 60px;
+}
+
+.noindent {
+  margin-left: 0px;
+  padding: 0px;
+}
+
+.pagefiller {
+  margin-bottom: 600px;
 }

@@ -11,46 +11,56 @@
     <h1>Bronwyn Detlofsen</h1>
     <h4>Front End Developer / Programmer</h4>
   </header>
-
   <nav>
     <ul>
       <a href="index.html"><li class="navbutton">About</li></a>
       <li class="navbutton">Skills</li>
       <li class="navbutton">Interests</li>
       <li class="navbutton">Contact</li>
-      <a href="guessinggame.html"><li class="navbutton">Game</li></a>
+      <a href="guessinggame.html"><li id="currentpg" class="navbutton">Game</li></a>
     </ul>
   </nav>
 
 <section class="content">
   <div id="sidebar">
-    <p class="sbtxt">Suggested Links</p>
-    <a href="http://www.waywardcoffee.com">Wayward Coffeehouse</a>
+    <p id="sbtxt">Suggested Links</p>
+    <ul class="noindent">
+      <li id="sbli"><a href="http://www.waywardcoffee.com">Wayward Coffeehouse</a></li>
+      <li id="sbli"><a href="http://www.geekgirlcon.com">GeekGirlCon</a></li>
+      <li id="sbli"><a href="http://www.codefellows.org">CodeFellows</a></li>
+    </ul>
   </div>
-    <!-- possibly insert the userName greeting here -->
-    <p class="leading">As an example of some basic JavaScript that I wrote, please have fun answering some questions about Bronwyn. Answer the prompts and you'll see responses to your answers appear on the page below. This script will tally the number of correct answers and let you know how well you did at the end. Have fun (as I did writing the script!) and don't take it too seriously!</p>
 
-    <p id="testOne"></p>
+    <p class="gameintro">As an example of some basic JavaScript that I wrote, please have fun answering some questions about Bronwyn. Answer the prompts and you'll see responses to your answers appear on the page below. This script will tally the number of correct answers and let you know how well you did at the end. Have fun (as I did writing the script!) and don't take it too seriously!</p>
+    <p id="responseGreeting"></p>
 
-    <h2>Question 1</h2>
+    <h3>Question 1</h3>
       <p id="responseOne"></p>
 
-    <h2>Question 2</h2>
-    <p id="responseTwo"></p>
+    <h3>Question 2</h3>
+      <p id="responseTwo"></p>
 
-    <h2>Question 3</h2>
-    <p id="responseThree"></p>
+    <h3>Question 3</h3>
+      <p id="responseThree"></p>
 
-    <h2>Question 4</h2>
-    <p id="responseFour"></p>
+    <h3>Question 4</h3>
+      <p id="responseFour"></p>
 
-    <h2>Question 5</h2>
-    <p id="responseFive"></p>
+    <h3>Question 5</h3>
+      <p id="responseFive"></p>
 
-    <h2>Question 6</h2>
-    <h2>Question 7</h2>
-    <h2>Your Score</h2>
+    <h3>Question 6</h3>
+      <p id="responseSix"></p>
 
+    <h3>Question 7</h3>
+      <p id="responseSeven"></p>
+
+    <h3>Your Score</h3>
+      <p id="responseScore"></p>
+
+
+    <div class="pagefiller">
+    </div>
   </section>
 
   <!-- <script src="app.js"></script> -->
