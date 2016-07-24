@@ -22,44 +22,52 @@
     </ul>
   </nav>
 
-<section class="content">
-  <div id="sidebar">
-    <p id="sbhead">Suggested Links</p>
-    <ul class="noindent">
-      <li id="sbli"><a href="http://www.waywardcoffee.com">Wayward Coffeehouse</a></li>
-      <li id="sbli"><a href="http://www.geekgirlcon.com">GeekGirlCon</a></li>
-      <li id="sbli"><a href="http://www.codefellows.org">CodeFellows</a></li>
-    </ul>
-    <p id="sbhead">Favorite Movie Quote</p>
-    <p id="sbtext">"This is what I do, darlin'. This is what I do."<br><i>- Capt. Malcolm Reynolds (Serenity)</i></p>
-  </div>
+  <section class="content">
+    <div id="sidebar">
+      <p id="sbhead">Suggested Links</p>
+      <ul class="noindent">
+        <li id="sbli"><a href="http://www.waywardcoffee.com">Wayward Coffeehouse</a></li>
+        <li id="sbli"><a href="http://www.geekgirlcon.com">GeekGirlCon</a></li>
+        <li id="sbli"><a href="http://www.codefellows.org">CodeFellows</a></li>
+      </ul>
+      <p id="sbhead">Favorite Movie Quote</p>
+      <p id="sbtext">"This is what I do, darlin'. This is what I do."<br><i>- Capt. Malcolm Reynolds (Serenity)</i></p>
+    </div>
 
-    <p class="gameintro">As an example of some basic JavaScript that I wrote, please have fun answering some questions about me. Answer the prompts and you'll see responses to your answers appear on the page below. This script will tally the number of correct answers and let you know how well you did at the end. Have fun (as I did writing the script!) and don't take it too seriously!</p>
-    <p id="responseGreeting"></p>
+    <article>
+      <p class="gameintro">As an example of some basic JavaScript that I wrote, please have fun answering some questions about me. Answer the prompts and you'll see responses to your answers appear on the page below. This script will also tally the number of correct answers and let you know how well you did at the end. Have fun (I certainly did while writing the script!) and don't take it too seriously!</p>
+      <p class="gameintrosubs">The first five questions should be answered with YES or NO, or with Y or N. The sixth question gives you 4 attempts to guess the right answer. The seventh question gives you 6 attempts to guess at least one correct answer.
+      <p id="responseGreeting" class="response"></p>
+    </article>
 
-    <h3>Question 1</h3>
-      <p id="responseOne"></p>
+    <div class="column1of2">
+      <h3>Question 1</h3>
+        <p class="question">Does Bronwyn ride a motorcycle?</p>
+        <p id="responseOne" class="response">></p>
+      <h3>Question 2</h3>
+        <p class="question">Does Bronwyn have a daughter?</p>
+        <p id="responseTwo" class="response">></p>
+      <h3>Question 3</h3>
+        <p class="question">Is Bronwyn a huge fan of Firefly/Serenity?</p>
+        <p id="responseThree" class="response">></p>
+      <h3>Question 4</h3>
+        <p class="question">Does Bronwyn own the best coffeehouse in Seattle?</p>
+        <p id="responseFour" class="response">></p>
+    </div>
 
-    <h3>Question 2</h3>
-      <p id="responseTwo"></p>
-
-    <h3>Question 3</h3>
-      <p id="responseThree"></p>
-
-    <h3>Question 4</h3>
-      <p id="responseFour"></p>
-
-    <h3>Question 5</h3>
-      <p id="responseFive"></p>
-
-    <h3>Question 6</h3>
-      <p id="responseSix"></p>
-
-    <h3>Question 7</h3>
-      <p id="responseSeven"></p>
-
-    <h3>Your Score</h3>
-      <p id="responseScore"></p>
+    <div class="column2of2">
+      <h3>Question 5</h3>
+        <p class="question">Is Bronwyn learning to be a great front end developer/programmer?</p>
+        <p id="responseFive" class="response">></p>
+      <h3>Question 6</h3>
+        <p class="question">In what year was Wayward Coffeehouse established? Please answer with a 4-digit year?</p>
+        <p id="responseSix" class="response">></p>
+      <h3>Question 7</h3>
+        <p class="question">Name a country (other than the U.S.) where you think Bronwyn has lived.</p>
+        <p id="responseSeven" class="response">></p>
+      <h3>Your Score</h3>
+        <p id="responseScore" class="response">></p>
+    </div>
 
     <div class="pagefiller">
     </div>

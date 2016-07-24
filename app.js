@@ -67,14 +67,14 @@ responseGreeting.textContent = 'Greetings, ' + userName + '! It\'s nice to meet 
 //
 // // Question 5
 // function questionFive() {
-//   var answerFive = prompt('Is Bronwyn learning to code?');
+//   var answerFive = prompt('Is Bronwyn learning to be a great front end developer/programmer?');
 //   var responseFive = document.getElementById('responseFive');
 //
 //   if (answerFive.toLowerCase() === 'yes' || answerFive.toLowerCase() === 'y') {
 //     responseFive.textContent = 'Why yes she is! That\'s why she\'s at CodeFellows!';
 //     score++;
 //   } else {
-//     responseFive.textContent = 'Got that wrong, mate. She\'s at CodeFellows to learn to code and launch a new career!';
+//     responseFive.textContent = 'You may think she's already a great programmer, but actually she\'s at CodeFellows to learn programming and to launch her new career!';
 //   };
 // }
 // questionFive();

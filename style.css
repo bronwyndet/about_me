@@ -41,7 +41,9 @@ h2 {
 
 h3 {
     color: black;
-    margin-left: 15px;
+    margin-left: 10px;
+    margin-bottom: -10px;
+    /*padding-bottom: 10px;*/
 }
 
 h4  {
@@ -128,6 +130,15 @@ li#sbli {
     /*border-radius: 5%;*/
 }
 
+.question {
+  font-family: sans-serif;
+  color: black;
+  font-style: italic;
+  font-size: 1em;
+  margin-left: 10px;
+  line-height: .9em;
+}
+
 .photos {
     display: inline;
 }
@@ -183,13 +194,33 @@ li#sbli {
 
 .gameintro {
     color: yellow;
-    margin-left: 15px;
+    margin-left: 20px;
     margin-top: 60px;
+}
+
+.gameintrosubs {
+    color: yellow;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.response {
+    color: white;
+    font-family: sans-serif;
+    margin-left: 10px;
+    font-size: 1em;
+    line-height: .9em;
 }
 
 .noindent {
   margin-left: 0px;
   padding: 0px;
+}
+
+.column1of2 , .column2of2 {
+    width: 500px;
+    float: left;
+    margin: 10px;
 }
 
 .pagefiller {
