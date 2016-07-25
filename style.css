@@ -1,6 +1,6 @@
 header {
   position: fixed;
-  background-image: url("images/atmospheremoto.jpg");
+  background-image: url("images/atmospheremoto.JPG");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: grey;
@@ -13,7 +13,7 @@ header {
 
 body {
   font-family: Arial, sans-serif;
-  background-image: url("images/windyroad.jpg");
+  background-image: url("images/windyroad.JPG");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: grey;
